@@ -6,6 +6,7 @@ function greenButton() {
 
 if(main.classList("selectionFood") !==null && main.classList.contains("selectionDrink") !==null && main.classList.contains("selectionDessert") !==null ){
     contador = 3;
+    
 }
     const botao = document.querySelector(".button")
             if(contador == 3){    
