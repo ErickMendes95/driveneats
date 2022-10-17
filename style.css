@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Righteous", sans-serif;
+  font-size: 1.9rem;
+  color: #ffffff;
+}
+
+.lowerSize {
+  font-size: 1.25rem;
+  color: #333333;
+}
+
+img {
+  width: 7rem;
+  height: 4.4rem;
+  border-radius: 15%;
+}
+
+/* TOPBAR */
+
+.topBar {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  position: fixed;
+  width: 100%;
+  height: 4.2rem;
+  top: 0;
+  z-index: 1;
+}
+
+.topBar div {
+  margin-left: 1.2rem;
+  width: fit-content;
+}
+
+.topBar h2 {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* MAIN */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.1rem;
+  margin-top: 4rem;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.foodContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 0.7rem;
+}
+
+.foodOption {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+  background-color: #ffffff;
+  min-width: 10.1rem;
+  max-width: 10.1rem;
+  border: 1px solid #a6a6a6;
+  border-radius: 0.5rem;
+  z-index: 0;
+}
+
+
+.selectionFood {
+  border: 3px solid lightgreen;
+}
+
+.selectionDrink {
+  border: 3px solid lightgreen;
+}
+
+.selectionDessert {
+  border: 3px solid lightgreen;
+}
+
+.foodOption ion-icon {
+  color: green;
+    font-size: 28px;
+    position: absolute;
+    right: 2%;
+    bottom: 1%;
+}
+
+.escondido {
+  visibility: hidden;
+ 
+}
+
+.foodOption div {
+  width: 100%;
+  margin: 0.25rem 0;
+}
+
+.foodOption h2 {
+  font-size: 1rem;
+}
+
+.foodOption p {
+  font-size: 0.9rem;
+}
+
+.grayText {
+  font-weight: 300;
+  color: #a6a6a6;
+}
+
+.centralize {
+  widows: 100%;
+  text-align: center;
+}
+
+.foodOption h2,
+p {
+  margin-left: 1rem;
+}
+
+/* Bottom Bar */
+
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.4rem;
+  background-color: #ffffff;
+}
+
+.button {
+  background-color: #cbcbcb;
+  text-align: center;
+  color: #ffffff;
+  width: 22rem;
+  height: 3.4rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5rem;
+  
+}
+
+.green {
+  background-color: green;
+}
+
