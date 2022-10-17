@@ -78,9 +78,28 @@ function addClassSelectionDessert(element) {
 }
 
 function enviarmensagem() {
+
+    let classepratos = document.querySelector(".selectionFood")
+    let classebebidas = document.querySelector(".selectionDrink")
+    let classesobremesas = document.querySelector(".selectionDessert")
+
+    let childrenpratos = classepratos.children
+    let nomeprato = childrenpratos[1].textContent
+    // let precoprato = childrenpratos[3].classList("price")
+    console.log(childrenpratos[3])
+
+    let childrenbebidas = classebebidas.children
+    let nomebebida = childrenbebidas[1].textContent
+
+    let childrensobremesas = classesobremesas.children
+    let nomesobremesa = childrensobremesas[1].textContent
+
+    let precofinal
+
+
     let celular = "5524988437290";
 
-    let texto = "Olá, gostaria de fazer o pedido: \n- Prato: Frango Yin Yang \n- Bebida: Coquinha Gelada \n- Sobremesa: Pudim \nTotal: R$ 27.70"
+    let texto = `Olá, gostaria de fazer o pedido: \n- Prato: ${nomeprato} \n- Bebida: ${nomebebida} \n- Sobremesa: ${nomesobremesa} \nTotal: R$ 27.70`
 
     texto = window.encodeURIComponent(texto)
 
