@@ -76,3 +76,13 @@ function addClassSelectionDessert(element) {
 
     greenButton();
 }
+
+function enviarmensagem() {
+    let celular = "5524988437290";
+
+    let texto = "Olá, gostaria de fazer o pedido: \n- Prato: Frango Yin Yang \n- Bebida: Coquinha Gelada \n- Sobremesa: Pudim \nTotal: R$ 27.70"
+
+    texto = window.encodeURIComponent(texto)
+
+    window.open(" https://wa.me/" + celular + "?text=" + texto);
+}
